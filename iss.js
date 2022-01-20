@@ -22,8 +22,10 @@ const fetchMyIP = (callback) => {
     const data = JSON.parse(body);
     const myIP = data.ip;
     callback(null, myIP);
-
   });
 };
 
-module.exports = { fetchMyIP };
+const fetchCoordsByIP = (ip, callback) => {
+
+}
+module.exports = { fetchMyIP, fetchCoordsByIP };
