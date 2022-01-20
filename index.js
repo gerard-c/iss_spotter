@@ -1,9 +1,8 @@
 const { nextISSTimesForMyLocation } = require('./iss');
 
-nextISSTimesForMyLocation((error, passTimes) => {
+nextISSTimesForMyLocation((error, passes) => {
   if (error) {
-    return console.log("It didn't work!", error);
+    console.log(`Error in chaining: ${error}`);
   }
-  
-  console.log(passTimes);
-});
+  console.log(passes);
+})
