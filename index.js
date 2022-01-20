@@ -18,11 +18,11 @@ const { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes } = require('./iss');
 //   console.log(data);
 // });
 
-fetchISSFlyOverTimes({ latitude: 43.6227, longitude: -79.3892 }, (error, data) => {
-  if (error) {
-    console.log("It didn't work!" , error);
-    return;
-  }
+// fetchISSFlyOverTimes({ latitude: 43.6227, longitude: -79.3892 }, (error, data) => {
+//   if (error) {
+//     console.log("It didn't work!" , error);
+//     return;
+//   }
 
-  console.log(data);
-});
+//   console.log(data);
+// });
