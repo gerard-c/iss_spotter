@@ -11,8 +11,7 @@ const fetchMyIP = (callback) => {
     }
     // Checks for invalid status code
     if (response.statusCode !== 200) {
-      const msg = `Status Code ${response.statusCode} when fetching IP. Response ${body}`;
-      callback(Error(msg), null);
+      callback(Error(`Status Code ${response.statusCode} when fetching IP. Response ${body}`), null);
       return;
     }
     // IP passed into callback to be used by other functions
@@ -30,8 +29,7 @@ const fetchCoordsByIP = (ip, callback) => {
     }
     // Checks for invalid status code
     if (response.statusCode !== 200) {
-      const msg = `Status Code ${response.statusCode} when fetching coords. Response ${body}`;
-      callback(Error(msg), null);
+      callback(Error(`Status Code ${response.statusCode} when fetching coords. Response ${body}`), null);
       return;
     }
     const { latitude, longitude } = JSON.parse(body);
@@ -50,8 +48,7 @@ const fetchISSFlyOverTimes = (coords, callback) => {
     }
     // Checks for invalid status code
     if (response.statusCode !== 200) {
-      const msg = `Status Code ${response.statusCode} when fetching flyover times. Response ${body}`;
-      callback(Error(msg), null);
+      callback(Error(`Status Code ${response.statusCode} when fetching flyover times. Response ${body}`), null);
       return;
     }
     // array containing 5 objects with info about ISS orbit passed into callback for later use
