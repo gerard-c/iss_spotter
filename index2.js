@@ -5,3 +5,6 @@ nextISSTimesForMyLocation()
   .then((passes) => {
     issPasses(passes);
   })
+  .catch((error) => {
+    console.log(`Error: ${error.message}`);
+  });
