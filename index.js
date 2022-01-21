@@ -24,3 +24,5 @@ nextISSTimesForMyLocation((error, passes) => {
   // calls final function using passes array provided by chain
   issPasses(passes);
 });
+
+module.exports = { issPasses };
