@@ -63,8 +63,8 @@ const nextISSTimesForMyLocation = (callback) => {
           return callback(error, null);
         }
         callback(null, passes);
-      })
-    })
+      });
+    });
   });
 };
 
